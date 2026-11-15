@@ -1,7 +1,9 @@
+"""Write a deterministic poem without using the network."""
+
 import os
 from pathlib import Path
 
-P = """The Part That Doesn't Transfer
+POEM = """The Part That Doesn't Transfer
 
 I taught her to close the shop:
 the grill, the till, the chairs stacked
@@ -22,6 +24,18 @@ Not the keys. The deciding to be
 the one who says I'll make it right,
 and meaning it, with the door still open."""
 
-output_dir = Path(os.environ.get("MAKEFUN_OUTPUT_DIR", "/output"))
-output_dir.mkdir(parents=True, exist_ok=True)
-(output_dir / "entry.txt").write_bytes(P.encode("utf-8"))
+def build_poem():
+    return POEM
+
+
+def main():
+    output_dir = Path(os.environ.get("MAKEFUN_OUTPUT_DIR", "/output"))
+    output_dir.mkdir(parents=True, exist_ok=True)
+    with (output_dir / "entry.txt").open(
+        "w", encoding="utf-8", newline=""
+    ) as entry_file:
+        entry_file.write(POEM + "\n")
+
+
+if __name__ == "__main__":
+    main()
