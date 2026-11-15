@@ -3,32 +3,31 @@
 import os
 from pathlib import Path
 
-POEM = """The Magnet
+POEM = """Two Blinks
 
-The magnet is round and the size of a doughnut.
-It lives in the drawer with the good scissors.
-When the family has said what it came to say
-and the order is signed in two places,
-you tape it over the device in his chest
-and the thing that was going to save him
-stops offering.
+Morning. The nurse sets the board
+on the arm of the chair, and the cursor
+goes where I look, which is the trick
+they taught me: look at the letter,
+wait for the blink, and the letter is mine.
 
-He asked for it plainly, the way a man
-asks for water. I don't want to be brought back.
-Then, after a while: stay.
+I am slow. Thirty letters an hour
+on a good day. The machine has learned me
+and starts to finish words. By noon
+it offers the whole sentence, laid out
+on the tray like a meal I did not order.
 
-What they don't tell you is the pace of it.
-The heart, left alone, takes its time.
-Half an hour. The room gets smaller.
-The radiator ticks. Somebody's phone
-buzzes once, in a coat, in the hall.
+I look at no. I look at no again.
+It deletes. It waits, patient as a spoon.
 
-I keep my hand flat on the magnet.
-It cannot slip. I know that. I stay anyway,
-until his wife comes in and puts her hand
-on mine, and we stand there together
-holding a thing that is doing nothing,
-waiting for him to finish."""
+There is a nurse who reads me
+the way you read a clock, without stopping,
+and a nurse who watches my eyes travel
+the row and does not guess.
+
+Today I am spelling my daughter's name
+for the fourth time this week.
+It is a long name. I have all morning."""
 
 def build_poem():
     return POEM
